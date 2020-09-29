@@ -1,6 +1,7 @@
 namespace Dreamteck.Forever
 {
     using UnityEngine;
+    using UnityEngine.UI;
     using System.Collections;
 
     public class HoverPlayer : MonoBehaviour
@@ -28,6 +29,9 @@ namespace Dreamteck.Forever
         float deathTime = 3f;
         Vector3 startingPosition;
 
+        public Slider slider;
+        private float sliderValue;
+
 
         void Awake()
         {
@@ -48,9 +52,18 @@ namespace Dreamteck.Forever
 
         void Update()
         {
+            // slider movement
+
+            sliderValue = slider.value;
+            /*Vector3 temp = transform.position;
+            temp.x = sliderValue;
+            transform.localPosition = temp;*/
+
             //Get input
-            forwardInput = Input.GetAxis("Vertical");
-            sidewaysInput = Input.GetAxis("Horizontal");
+            forwardInput = 1;   //------- new move forward
+            //forwardInput = Input.GetAxis("Vertical");
+            sidewaysInput = sliderValue;                    
+            //sidewaysInput = Input.GetAxis("Horizontal");
         }
 
         void FixedUpdate()

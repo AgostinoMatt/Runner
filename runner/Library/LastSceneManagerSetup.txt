@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Dreamteck/Forever/Examples/Math Highway/Scene.unity
+- path: Assets/Dreamteck/Forever/Examples/Retro Wave/Scene.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
