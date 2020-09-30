@@ -62,6 +62,12 @@ namespace Dreamteck.Forever
             if (cameraTransform.position.y - transform.position.y >= dieHeight) Die();
         }
 
+        public void jump()
+        {
+            if (!inAir)
+            rb.AddForce(Vector2.up * initialJumpForce, ForceMode2D.Impulse);
+        }
+
         private void OnCollisionEnter2D(Collision2D collision)
         {
             if (dead) return;
