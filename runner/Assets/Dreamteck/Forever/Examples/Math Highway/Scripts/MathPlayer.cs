@@ -38,6 +38,16 @@
             boost = 0f;
         }
 
+        public void MoveLeft()
+        {
+            runner.lane--;
+        }
+
+        public void MoveRight()
+        {
+            runner.lane++;
+        }
+
         private void Update()
         {
             if (boost == 0f)
