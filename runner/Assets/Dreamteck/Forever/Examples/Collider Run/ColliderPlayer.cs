@@ -40,7 +40,7 @@ namespace Dreamteck.Forever
             runner.followSpeed = startSpeed;
             camLocalPos = cameraTransform.localPosition;
             EndScreen.onRestartClicked += OnRestart;
-            Cursor.lockState = CursorLockMode.Locked;
+            //Cursor.lockState = CursorLockMode.Locked;
         }
 
         void OnRestart()
@@ -48,7 +48,27 @@ namespace Dreamteck.Forever
             LevelGenerator.instance.Restart();
             runner.follow = true;
             runner.followSpeed = startSpeed;
-            Cursor.lockState = CursorLockMode.Locked;
+            //Cursor.lockState = CursorLockMode.Locked;
+        }
+
+        public void MoveDown()
+        {
+            input.y += 0.5f;
+        }
+        
+        public void MoveUp()
+        {
+            input.y -= 0.5f;
+        }
+
+        public void MoveRight()
+        {
+            input.x += 30;
+        }
+
+        public void MoveLeft()
+        {
+            input.x -= 30;
         }
 
         private void FixedUpdate()
@@ -56,8 +76,8 @@ namespace Dreamteck.Forever
             rb.isKinematic = !LevelGenerator.instance.ready;
             //Handle input from mouse
 
-            input.x += Input.GetAxis("Mouse X") * horizontalSenzitivity;
-            input.y -= Input.GetAxis("Mouse Y") * verticalSensitivity;
+            //input.x += Input.GetAxis("Mouse X") * horizontalSenzitivity;
+            //input.y -= Input.GetAxis("Mouse Y") * verticalSensitivity;
             input.y = Mathf.Clamp01(input.y);
             if (input.x > 360f) input.x -= 360f * Mathf.FloorToInt(input.x / 360f);
             if (input.x < 360f) input.x += 360f * Mathf.FloorToInt(input.x / -360f);
@@ -96,7 +116,7 @@ namespace Dreamteck.Forever
         {
             //Crash
             runner.follow = false;
-            Cursor.lockState = CursorLockMode.None;
+            //Cursor.lockState = CursorLockMode.None;
             EndScreen.Open();
         }
     }
