@@ -3,6 +3,7 @@ namespace Dreamteck.Forever
     using UnityEngine;
     using UnityEngine.UI;
     using System.Collections;
+    using UnityEngine.SceneManagement;
 
     public class HoverPlayer : MonoBehaviour
     {
@@ -124,6 +125,7 @@ namespace Dreamteck.Forever
                     EndScreen.Open();
                 }
             }
+            SceneManager.LoadScene("EndScreen");
         }
     }
 }
