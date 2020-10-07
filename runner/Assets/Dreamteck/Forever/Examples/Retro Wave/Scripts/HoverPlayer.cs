@@ -125,7 +125,14 @@ namespace Dreamteck.Forever
                     EndScreen.Open();
                 }
             }
-            SceneManager.LoadScene("EndScreen");
+
+            //if (transform.position.z >= 200)
+            //EndScreen.Open();
+
+            if (transform.rotation.z >= 150 || transform.rotation.z <= -150)
+            {
+                EndScreen.Open();
+            }
         }
     }
 }
