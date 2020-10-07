@@ -42,8 +42,8 @@ MonoBehaviour:
     y: 0
     width: 279
     height: 828
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 279, y: 72}
+  m_MaxSize: {x: 4004, y: 4022}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -73,7 +73,7 @@ MonoBehaviour:
   m_MinSize: {x: 483, y: 222}
   m_MaxSize: {x: 8008, y: 4022}
   vertical: 0
-  controlID: 110
+  controlID: 111
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -93,8 +93,8 @@ MonoBehaviour:
     y: 0
     width: 204
     height: 828
-  m_MinSize: {x: 204, y: 222}
-  m_MaxSize: {x: 4004, y: 4022}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -222,7 +222,7 @@ MonoBehaviour:
   m_MinSize: {x: 715, y: 494}
   m_MaxSize: {x: 18010, y: 14044}
   vertical: 0
-  controlID: 109
+  controlID: 87
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -265,12 +265,12 @@ MonoBehaviour:
     height: 551
   m_MinSize: {x: 202, y: 222}
   m_MaxSize: {x: 4002, y: 4022}
-  m_ActualView: {fileID: 17}
+  m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 17}
   - {fileID: 16}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -326,9 +326,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 42b8ffff
-      m_LastClickedID: -18366
-      m_ExpandedIDs: d875fffffa75ffff8efbffff2e31000048310000
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 7859fcffe0a1fdffa6befdffb2e0fdffba59feff7655ffff06faffff0efaffff8efbffff264d00008c5100006656000046570000265800009c5a0000c05a0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -426,19 +426,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Dreamteck/Forever/Examples/Retro Wave/Prefabs
+    - Assets/Dreamteck/Forever/Examples/Retro Wave
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Dreamteck/Forever/Examples/Retro Wave/Prefabs
+  - Assets/Dreamteck/Forever/Examples/Retro Wave
   m_LastFoldersGridSize: 16
   m_LastProjectPath: D:\ApparentlyCanadian\Runner\runner
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 30}
-    m_SelectedIDs: de2c0000
-    m_LastClickedID: 11486
+    scrollPos: {x: 0, y: 150}
+    m_SelectedIDs: 882b0000
+    m_LastClickedID: 11144
     m_ExpandedIDs: 00000000182b0000682b0000882b0000062c0000e42f000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -494,22 +494,22 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: 00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Prefabs
-      m_OriginalName: Prefabs
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 11486
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 5}
     m_CreateAssetUtility:
@@ -639,9 +639,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1.0648454, y: 5.3209505, z: 109.64488}
+    m_Target: {x: 1.0316497, y: 3.820496, z: 110.85683}
     speed: 2
-    m_Value: {x: 1.0648454, y: 5.3209505, z: 109.64488}
+    m_Value: {x: 1.0316497, y: 3.820496, z: 110.85683}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -670,9 +670,9 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.0007841357, y: 0.9827927, z: -0.1847434, w: 0.004228583}
+    m_Target: {x: 0.13489087, y: 0.85863256, z: -0.2881788, w: 0.40192452}
     speed: 2
-    m_Value: {x: 0.00078412396, y: 0.9827779, z: -0.18474063, w: 0.0042285197}
+    m_Value: {x: 0.13488846, y: 0.8586172, z: -0.28817365, w: 0.40191734}
   m_Size:
     m_Target: 2.7510746
     speed: 2
@@ -694,7 +694,7 @@ MonoBehaviour:
     m_DynamicClip: 1
     m_OcclusionCulling: 0
   m_ShowGlobalGrid: 1
-  m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
+  m_LastSceneViewRotation: {x: 0.0007841357, y: 0.9827927, z: -0.1847434, w: 0.004228583}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 

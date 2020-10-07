@@ -6,10 +6,12 @@
     {
         private void OnTriggerEnter(Collider other)
         {
+
             HoverPlayer player = other.GetComponentInParent<HoverPlayer>();
             if (player == null) return;
             Destroy(gameObject);
             //Add score
+            //ScoreScript.scoreValue += 1;
         }
     }
 }

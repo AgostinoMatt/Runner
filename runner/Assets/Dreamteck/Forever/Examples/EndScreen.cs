@@ -4,6 +4,7 @@
     using System.Collections.Generic;
     using UnityEngine;
     using UnityEngine.UI;
+    using UnityEngine.SceneManagement;
 
     public class EndScreen : MonoBehaviour
     {
@@ -23,11 +24,15 @@
             StopAllCoroutines();
             screenGroup.gameObject.SetActive(false);
             Time.timeScale = 1f;
+            ScoreScript.scoreValue = 0;
+            HoverPlayer.sliderValue = 0;
+            SceneManager.LoadScene("Title");
         }
 
         public static void Open()
         {
             instance.StartCoroutine(instance.FadeIn());
+            
         }
 
         IEnumerator FadeIn()

@@ -31,7 +31,7 @@ namespace Dreamteck.Forever
         Vector3 startingPosition;
 
         public Slider slider;
-        private float sliderValue;
+        public static float sliderValue;
 
 
         void Awake()
@@ -113,6 +113,16 @@ namespace Dreamteck.Forever
             localVelocity.z = Mathf.Clamp(localVelocity.z, -maxSpeed, maxSpeed);
             localVelocity.x = Mathf.Clamp(localVelocity.x, -turnSpeed, turnSpeed);
             rb.velocity = resultMatrix.MultiplyVector(localVelocity);
+
+            if (transform.position.y <= -30)
+            {
+                EndScreen.Open();
+            }
+
+            if (transform.rotation.z >= 150 || transform.rotation.z <= -150)
+            {
+                EndScreen.Open();
+            }
         }
 
         private void OnCollisionStay(Collision collision)
@@ -126,13 +136,7 @@ namespace Dreamteck.Forever
                 }
             }
 
-            //if (transform.position.z >= 200)
-            //EndScreen.Open();
-
-            if (transform.rotation.z >= 150 || transform.rotation.z <= -150)
-            {
-                EndScreen.Open();
-            }
+            
         }
     }
 }
